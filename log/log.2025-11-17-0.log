@@ -1,0 +1,406 @@
+、2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a2003df
+2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-17 16:50:36 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:50:42 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:53:22 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:55:21 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:55:27 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:55:54 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:55:55 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:56:08 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 16:56:53 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:06:53 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:07:11 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:07:35 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:07:39 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:07:47 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:10:20 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:11:35 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:11:37 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 删除部门id为1
+2025-11-17 17:11:37 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:11:55 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 删除部门id为5
+2025-11-17 17:11:55 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:14:11 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:14:15 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:16:39 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:16:52 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:17:06 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:17:10 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 删除部门id为2
+2025-11-17 17:17:11 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:17:20 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:17:26 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 删除部门id为3
+2025-11-17 17:17:26 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:22:08 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:26:09 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:26:27 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:26:41 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:26:45 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:26:50 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:26:54 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:27:00 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:28:00 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:28:20 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:28:21 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:29:17 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:30:17 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:31:00 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:31:02 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:32:08 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:32:27 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:32:34 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+### The error may exist in com/zhang/Mapper/DeptMapper.java (best guess)
+### The error may involve com.zhang.Mapper.DeptMapper.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into dept(name,createTime,updateTime) values(?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+; Column 'name' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy72.add(Unknown Source)
+	at com.zhang.Service.impl.DeptServiceImpl.add(DeptServiceImpl.java:37)
+	at com.zhang.Controller.DeptController.add(DeptController.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-11-17 17:34:06 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:34:09 [http-nio-8080-exec-3] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2025-11-17 17:34:09": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2025-11-17 17:34:09' could not be parsed at index 10]
+2025-11-17 17:34:12 [http-nio-8080-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2025-11-17 17:34:12": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2025-11-17 17:34:12' could not be parsed at index 10]
+2025-11-17 17:36:25 [http-nio-8080-exec-8] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2025-11-17 17:36:25": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2025-11-17 17:36:25' could not be parsed at index 10]
+2025-11-17 17:38:16 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-17 17:38:16 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-17 17:38:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-17 17:38:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-17 17:39:58 [main] INFO  com.zhang.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 8092 (D:\IDEA\Code\Project\Tool\Tlias-Web-Management\target\classes started by 26285 in D:\IDEA\Code\Project\Tool\Tlias-Web-Management)
+2025-11-17 17:39:58 [main] INFO  com.zhang.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-17 17:39:59 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-17 17:39:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-17 17:39:59 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-17 17:39:59 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17 17:39:59 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-17 17:39:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 616 ms
+2025-11-17 17:39:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-17 17:39:59 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-17 17:39:59 [main] INFO  com.zhang.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.239 seconds (process running for 1.787)
+2025-11-17 17:40:00 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17 17:40:00 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-17 17:40:00 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-17 17:40:00 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-17 17:40:01 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a1769ee
+2025-11-17 17:40:01 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-17 17:40:01 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:41:18 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:41:20 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:41:27 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 添加部门Dept(id=null, name=市场部, createTime=2025-11-17T17:41:27.391980900, updateTime=2025-11-17T17:41:27.391980900)
+2025-11-17 17:41:27 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:45:16 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:50:57 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:51:05 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 删除部门id为4
+2025-11-17 17:51:05 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:52:01 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:52:31 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:52:34 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+### The error may exist in com/zhang/Mapper/DeptMapper.java (best guess)
+### The error may involve com.zhang.Mapper.DeptMapper.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into dept(name,createTime,updateTime) values(?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+; Column 'name' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy72.add(Unknown Source)
+	at com.zhang.Service.impl.DeptServiceImpl.add(DeptServiceImpl.java:37)
+	at com.zhang.Controller.DeptController.add(DeptController.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-11-17 17:52:38 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 修改部门Dept(id=null, name=null, createTime=null, updateTime=2025-11-17T17:52:38.032039500)
+2025-11-17 17:52:38 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:52:42 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:55:34 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:55:46 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:56:01 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:58:06 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:58:09 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 17:58:18 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 修改部门Dept(id=null, name=调研部, createTime=null, updateTime=2025-11-17T17:58:18.394625700)
+2025-11-17 17:58:18 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:58:56 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 17:59:55 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:00:02 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 18:00:05 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 18:00:08 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 修改部门Dept(id=6, name=调研部, createTime=null, updateTime=2025-11-17T18:00:08.493957200)
+2025-11-17 18:00:08 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:00:18 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 添加部门Dept(id=null, name=策划部, createTime=2025-11-17T18:00:18.510950700, updateTime=2025-11-17T18:00:18.510950700)
+2025-11-17 18:00:18 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:00:35 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 添加部门Dept(id=null, name=设计部, createTime=2025-11-17T18:00:35.551675800, updateTime=2025-11-17T18:00:35.551675800)
+2025-11-17 18:00:35 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:00:45 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+### The error may exist in com/zhang/Mapper/DeptMapper.java (best guess)
+### The error may involve com.zhang.Mapper.DeptMapper.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into dept(name,createTime,updateTime) values(?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+; Column 'name' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy72.add(Unknown Source)
+	at com.zhang.Service.impl.DeptServiceImpl.add(DeptServiceImpl.java:37)
+	at com.zhang.Controller.DeptController.add(DeptController.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-11-17 18:00:50 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 添加部门Dept(id=null, name=规划部, createTime=2025-11-17T18:00:50.540463100, updateTime=2025-11-17T18:00:50.540463100)
+2025-11-17 18:00:50 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:01:40 [http-nio-8080-exec-5] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:02:03 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:02:18 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 添加部门Dept(id=null, name=生产部, createTime=2025-11-17T18:02:18.590051100, updateTime=2025-11-17T18:02:18.590051100)
+2025-11-17 18:02:18 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:02:28 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-17 18:02:28 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-17 18:02:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-17 18:02:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-17 18:05:11 [main] INFO  com.zhang.TliasWebManagementApplication - Starting TliasWebManagementApplication using Java 23.0.2 with PID 18148 (D:\IDEA\Code\Project\Tool\Tlias-Web-Management\target\classes started by 26285 in D:\IDEA\Code\Project\Tool\Tlias-Web-Management)
+2025-11-17 18:05:11 [main] INFO  com.zhang.TliasWebManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-17 18:05:11 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-17 18:05:11 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-17 18:05:11 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-17 18:05:11 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-17 18:05:12 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-17 18:05:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+2025-11-17 18:05:12 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-17 18:05:12 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-11-17 18:05:12 [main] INFO  com.zhang.TliasWebManagementApplication - Started TliasWebManagementApplication in 1.141 seconds (process running for 1.671)
+2025-11-17 18:05:15 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17 18:05:15 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-17 18:05:15 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-17 18:05:15 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-17 18:05:16 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72bb5a27
+2025-11-17 18:05:16 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-17 18:05:16 [http-nio-8080-exec-1] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:05:43 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:05:49 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:07:40 [http-nio-8080-exec-3] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:08:00 [http-nio-8080-exec-6] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:08:09 [http-nio-8080-exec-7] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 18:08:15 [http-nio-8080-exec-4] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 18:08:17 [http-nio-8080-exec-9] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 18:08:18 [http-nio-8080-exec-10] INFO  com.zhang.Controller.DeptController - 查询部门id为6
+2025-11-17 18:08:28 [http-nio-8080-exec-2] INFO  com.zhang.Controller.DeptController - 修改部门Dept(id=6, name=售后部, createTime=null, updateTime=2025-11-17T18:08:28.304138700)
+2025-11-17 18:08:28 [http-nio-8080-exec-8] INFO  com.zhang.Controller.DeptController - 查询所有部门
+2025-11-17 18:34:44 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-17 18:34:44 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-17 18:34:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-17 18:34:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

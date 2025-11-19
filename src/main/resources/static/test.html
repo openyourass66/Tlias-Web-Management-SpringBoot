@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 650px;
+            margin: 20px auto;
+            border-collapse:collapse;
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        td,th{
+            text-align: center;
+            width: 40px;
+            border-bottom: 1px solid black;
+        }
+        th{
+            background-color: #ddd;
+            height: 20px;
+        }
+        td{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div  id="app">
+        <table >
+            <caption>部门管理
+                <button @click="add">添加</button>
+            </caption>
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>名称</th>
+                    <th>创建时间</th>
+                    <th>修改时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in list" :key="item.id">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.createTime | formatTime}}</td>
+                    <td>{{item.updateTime | formatTime}}</td>
+                    <td>
+                        <button @click="update(item.id)">修改</button>
+                        <button @click="del(item.id)">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            list: []
+        },
+        created() {
+            this.getList()
+        },
+        methods: {
+            //获取部门列表
+            async getList() {
+                try{
+                    const res = await axios.get("http://localhost:8080/depts")
+                    this.list = res.data.data
+                    if(res.data.code===1){
+                        this.list = res.data.data
+                    }
+                }catch{
+                    console.error("获取部门列表失败：", error)
+                    alert("网络错误，获取部门列表失败")
+                }
+            },
+            //添加部门
+            async add(){
+                const addName = prompt("请输入部门名称：").trim()
+                if(!addName) return
+                if(!confirm("确定要添加吗？")) return
+                try{
+                    const res = await axios.post("http://localhost:8080/depts",{
+                        name:addName,
+                        createTime:new Date().toISOString(),
+                        updateTime:new Date().toISOString()
+                    })
+                    if(res.data.code===1){
+                        this.getList()
+                        alert("添加成功")
+                    }else{
+                        alert("添加失败")
+                    }
+                }catch{
+                    console.error("添加失败：", error)
+                    alert("网络错误，添加失败")
+                }
+            },
+            //根据id查询部门
+            async getById(id){
+                try{
+                    const res = await axios.get(`http://localhost:8080/depts/${id}`,{
+                    })
+                    if(res.data.code===1){
+                        return res.data.data
+                    }else{
+                        alert("查询失败")
+                        return null
+                    }
+                }catch{
+}
+            },
+            //修改部门
+            async update(id){
+                const dept = await this.getById(id)
+                if(!dept) return
+                const newName=prompt("请输入新部门名称：",dept.name).trim()
+                if(!newName) return
+                if(!confirm("确定要修改吗？")) return
+                try{
+                    const res=await axios.put("http://localhost:8080/depts",{
+                        id:id,
+                        name:newName,
+                        updateTime:new Date().toISOString()
+                    })
+                    if(res.data.code===1){
+                        this.getList()
+                        alert("修改成功")
+                    }else{
+                        alert("修改失败")
+                    }
+                }catch{
+                    console.error("修改失败：", error)
+                    alert("网络错误，修改失败")
+                }
+            },
+            //删除部门
+            async del(delId){
+                const confirmResult = confirm("确定要删除吗？");
+                if (!confirmResult) return;
+                try{
+                    const res=await axios.delete("http://localhost:8080/depts",{
+                        params:{
+                            id:delId
+                        }
+                    })
+                    if(res.data.code===1){
+                        this.getList()
+                        alert("删除成功")
+                    }else{
+                        alert("删除失败")
+                    }
+                }catch{
+                    console.error("删除失败：", error)
+                    alert("网络错误，删除失败")
+                }
+                
+            }
+
+        },
+        // 格式化过滤获取的时间
+        filters: {
+            formatTime(timeStr) {
+                if (!timeStr) return '';
+                // 将ISO格式字符串转换为Date对象
+                const date = new Date(timeStr);
+                // 格式化年月日
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                // 格式化时分秒
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                const seconds = String(date.getSeconds()).padStart(2, '0');
+                // 拼接为 "yyyy-MM-dd HH:mm:ss" 格式
+                return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+            }
+        }
+    })
+</script>
+</body>
+</html>
