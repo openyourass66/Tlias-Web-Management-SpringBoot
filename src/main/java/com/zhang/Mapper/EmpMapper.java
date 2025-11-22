@@ -9,10 +9,16 @@ import java.util.List;
 @Mapper
 public interface EmpMapper {
 
-    //查询员工
+    //条件查询员工
     List<Emp> list(EmpQueryParam  param);
+    //根据id查询员工
+    Emp findById(Integer id);
     //添加员工
 //    @Options(useGeneratedKeys = true,keyColumn = "id")
     void add(Emp emp);
+    //修改员工
+    void update(Emp emp);
+    //删除员工
+    void deleteByIds(List<Integer> ids);
 
 }

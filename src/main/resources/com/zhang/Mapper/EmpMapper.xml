@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zhang.Mapper.EmpMapper">
+<!--    条件查询员工-->
     <select id="list" resultType="com.zhang.pojo.Emp">
         select e.*,d.name deptName from emp e left join dept d on e.deptId=d.id
         <where>
@@ -18,9 +19,90 @@
             order by e.updateTime desc
         </where>
     </select>
+    <resultMap id="empResultMap" type="com.zhang.pojo.Emp">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="name" column="name"/>
+        <result property="gender" column="gender"/>
+        <result property="phone" column="phone"/>
+        <result property="job" column="job"/>
+        <result property="salary" column="salary"/>
+        <result property="image" column="image"/>
+        <result property="entryDate" column="entryDate"/>
+        <result property="deptId" column="deptId"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="deptName" column="deptName"/>
+        <collection property="exprList" ofType="com.zhang.pojo.EmpExpr">
+            <id property="id" column="id"/>
+            <result property="empId" column="empId"/>
+            <result property="begin" column="begin"/>
+            <result property="end" column="end"/>
+            <result property="company" column="company"/>
+            <result property="job" column="job"/>
+        </collection>
+
+
+    </resultMap>
+<!--    根据id查询员工-->
+    <select id="findById" resultMap="empResultMap">
+        select
+            e.*,
+            ee.begin,ee.end,ee.company,ee.job
+        from emp e left join empExpr ee
+            on e.id=ee.empId
+        where e.id=#{id}
+    </select>
+<!--    添加员工-->
     <insert id="add" useGeneratedKeys="true" keyProperty="id">
         insert into emp(username,name,gender,phone,job,salary,ima ge,entryDate,deptId,createTime,updateTime)
         values(#{username},#{name},#{gender},#{phone},#{job},#{salary},#{image},#{entryDate},#{deptId},#{createTime},#{updateTime})
     </insert>
+<!--    修改员工-->
+    <update id="update">
+        update emp
+        <set>
+            <if test="username!=null">
+                username=#{username},
+            </if>
+            <if test="password!=null">
+                password=#{password},
+            </if>
+            <if test="name!=null">
+                name=#{name},
+            </if>
+            <if test="gender!=null">
+                gender=#{gender},
+            </if>
+            <if test="phone!=null">
+                phone=#{phone},
+            </if>
+            <if test="job!=null">
+                job=#{job},
+            </if>
+            <if test="salary!=null">
+                salary=#{salary},
+            </if>
+            <if test="image!=null">
+                image=#{image},
+            </if>
+            <if test="entryDate!=null">
+                entryDate=#{entryDate},
+            </if>
+            <if test="deptId!=null">
+                deptId=#{deptId},
+            </if>
+            updateTime=NOW()
+        </set>
+        where id=#{id}
+    </update>
+<!--    删除员工-->
+    <delete id="deleteByIds">
+        delete from emp where id in
+         <foreach collection="ids" item="id" separator="," open="(" close=")">
+             #{id}
+         </foreach>
+    </delete>
 
 </mapper>

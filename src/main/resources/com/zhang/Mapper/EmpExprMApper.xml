@@ -9,4 +9,10 @@
             (#{expr.empId},#{expr.begin},#{expr.end},#{expr.company},#{expr.job})
         </foreach>
     </insert>
+    <delete id="deleteByEmpIds">
+        delete from empExpr where empId in
+        <foreach collection="empIds" separator="," item="empId" open="(" close=")">
+            #{empId}
+        </foreach>
+    </delete>
 </mapper>

@@ -9,4 +9,6 @@ import java.util.List;
 public interface EmpExprMapper {
     //批量添加员工工作经历
     void addBatch(List<EmpExpr> exprList);
+    //删除员工工作经历
+    void deleteByEmpIds(List<Integer> empIds);
 }
