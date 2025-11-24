@@ -17,13 +17,18 @@ import java.util.List;
 public class ClazzServiceImpl implements ClazzService {
     @Autowired
     private ClazzMapper clazzMapper;
-    //分页查询
+    //分页条件查询
     @Override
     public PageResult<Clazz> page(ClazzQueryParam param){
         PageHelper.startPage(param.getPage(),param.getPageSize());
         List<Clazz> list = clazzMapper.page(param);
         Page<Clazz> p =(Page<Clazz>) list;
         return new PageResult<Clazz>(p.getTotal(),p.getResult());
+    }
+    //查询所有员工
+    @Override
+    public List<Clazz> findAll(){
+        return clazzMapper.findAll();
     }
     //根据id查询班级
     @Override
@@ -36,6 +41,12 @@ public class ClazzServiceImpl implements ClazzService {
         clazz.setCreateTime(LocalDateTime.now());
         clazz.setUpdateTime(LocalDateTime.now());
         clazzMapper.add(clazz);
+    }
+    //修改班级
+    @Override
+    public void update(Clazz clazz){
+        clazz.setUpdateTime(LocalDateTime.now());
+        clazzMapper.update(clazz);
     }
     //删除班级
     @Override

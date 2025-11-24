@@ -10,8 +10,10 @@ import java.util.Map;
 @Mapper
 public interface EmpMapper {
 
-    //条件查询员工
+    //分页条件查询
     List<Emp> page(EmpQueryParam  param);
+    //查询所有员工
+    List<Emp> findAll();
     //根据id查询员工
     Emp findById(Integer id);
     //添加员工
@@ -25,4 +27,5 @@ public interface EmpMapper {
     List<Map<String,Object>> getEmpJobData();
     //统计性别数据
     List<Map<String,Object>> getEmpGenderData();
+
 }

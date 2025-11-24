@@ -9,6 +9,8 @@ import java.util.List;
 public interface EmpService {
     //分页查询
     PageResult<Emp> page(EmpQueryParam  param);
+    //查询所有员工
+    List<Emp> findAll();
     //根据id查询员工
     Emp findById(Integer id);
     //添加员工
@@ -17,4 +19,5 @@ public interface EmpService {
     void deleteByIds(List<Integer> ids);
     //修改员工
     void update(Emp emp);
+
 }

@@ -19,12 +19,19 @@ public class EmpController {
     @Autowired
     private EmpService empService;
 
-    //分页查询
+    //分页条件查询
     @GetMapping()
     public Result page(EmpQueryParam  param) {
         log.info("分页查询,参数:{}", param);
         PageResult<Emp> pageResult = empService.page(param);
         return Result.success(pageResult);
+    }
+    //查询所有员工
+    @GetMapping("/list")
+    public Result findAll(){
+        log.info("查询所有员工");
+        List<Emp> empList = empService.findAll();
+        return Result.success(empList);
     }
     //根据id查询员工
     @GetMapping("/{id}")
@@ -55,5 +62,4 @@ public class EmpController {
         empService.deleteByIds(ids);
         return Result.success();
     }
-    //职位统计
 }

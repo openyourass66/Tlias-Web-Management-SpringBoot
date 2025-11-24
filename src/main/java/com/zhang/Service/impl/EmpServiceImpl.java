@@ -23,7 +23,7 @@ public class EmpServiceImpl implements EmpService {
     private EmpMapper empMapper;
     @Autowired
     private EmpExprMapper empExprMapper;
-    //分页查询
+    //分页条件查询
     @Override
     public PageResult<Emp> page(EmpQueryParam  param){
         PageHelper.startPage(param.getPage(),param.getPageSize());
@@ -31,6 +31,10 @@ public class EmpServiceImpl implements EmpService {
         Page<Emp> p =(Page<Emp>) empList;
         return new PageResult<Emp>(p.getTotal(),p.getResult());
 
+    }
+    //查询所有员工
+    public List<Emp> findAll(){
+        return empMapper.findAll();
     }
     //根据id查询员工
     @Override

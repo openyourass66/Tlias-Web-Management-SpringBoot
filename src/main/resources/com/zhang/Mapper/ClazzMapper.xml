@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zhang.Mapper.ClazzMapper">
-<!--    分页查询-->
+<!--    分页条件查询-->
     <select id="page" resultType="com.zhang.pojo.Clazz">
         select c.*,e.name masterName from Clazz c left join emp e on c.masterId=e.id
         <where>
@@ -16,6 +16,10 @@
         </where>
         order by c.updateTime desc
     </select>
+<!--    查询所有班级-->
+    <select id="findAll" resultType="com.zhang.pojo.Clazz">
+        select * from clazz
+    </select>
 <!--    根据id查询班级-->
     <select id="findById" resultType="com.zhang.pojo.Clazz">
         select * from clazz where id=#{id}
@@ -25,6 +29,31 @@
         insert into clazz(name,room,beginDate,endDate,masterId,subject,createTime,updateTime)
         values(#{name},#{room},#{beginDate},#{endDate},#{masterId},#{subject},#{createTime},#{updateTime})
     </insert>
+<!--    修改班级-->
+    <update id="update">
+        update clazz
+        <set>
+            <if test="name!=null">
+                name=#{name},
+            </if>
+            <if test="room!=null">
+                room=#{room},
+            </if>
+            <if test="beginDate!=null">
+                beginDate=#{beginDate},
+            </if>
+            <if test="endDate!=null">
+                endDate=#{endDate},
+            </if>
+            <if test="masterId!=null">
+                masterId=#{masterId},
+            </if>
+            <if test="subject!=null">
+                subject=#{subject},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
 <!--    删除班级-->
     <delete id="deleteById">
         delete from clazz where id=#{id}

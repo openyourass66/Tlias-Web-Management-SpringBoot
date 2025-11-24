@@ -36,6 +36,7 @@ public class DeptServiceImpl  implements DeptService {
         dept.setUpdateTime(LocalDateTime.now());
         deptMapper.add(dept);
     }
+    //删除部门
     @Override
     public void deleteById(Integer id){
         deptMapper.deleteById(id);
