@@ -28,14 +28,14 @@ public class EmpController {
     }
     //根据id查询员工
     @GetMapping("/{id}")
-    public Result get(@PathVariable("id") Integer id){
+    public Result findById(@PathVariable("id") Integer id){
         log.info("根据id查询员工,id:{}", id);
         Emp emp = empService.findById(id);
         return Result.success(emp);
     }
     //添加员工
     @PostMapping
-    public Result insert(@RequestBody Emp emp){
+    public Result add(@RequestBody Emp emp){
         log.info("添加员工,参数:{}", emp);
         empService.add(emp);
         return Result.success(emp);

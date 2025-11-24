@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zhang.Mapper.ClazzMapper">
 <!--    分页查询-->
-    <select id="list" resultType="com.zhang.pojo.Clazz">
+    <select id="page" resultType="com.zhang.pojo.Clazz">
         select c.*,e.name masterName from Clazz c left join emp e on c.masterId=e.id
         <where>
             <if test="name!=null and name!=''">
@@ -15,6 +15,10 @@
             </if>
         </where>
         order by c.updateTime desc
+    </select>
+<!--    根据id查询班级-->
+    <select id="findById" resultType="com.zhang.pojo.Clazz">
+        select * from clazz where id=#{id}
     </select>
 <!--    添加班级-->
     <insert id="add" >

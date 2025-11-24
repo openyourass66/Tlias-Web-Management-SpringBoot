@@ -11,7 +11,7 @@ import java.util.Map;
 public interface EmpMapper {
 
     //条件查询员工
-    List<Emp> list(EmpQueryParam  param);
+    List<Emp> page(EmpQueryParam  param);
     //根据id查询员工
     Emp findById(Integer id);
     //添加员工

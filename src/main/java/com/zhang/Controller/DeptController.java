@@ -16,14 +16,14 @@ public class DeptController {
     private DeptService deptService;
     //查询所有部门
     @GetMapping()
-    public Result List(){
+    public Result findAll(){
         List<Dept> deptList =deptService.findAll();
         log.info("查询所有部门");
         return Result.success(deptList);
     }
     //根据id查询部门
     @GetMapping("/{id}")
-    public Result get(@PathVariable("id") Integer id){
+    public Result findById(@PathVariable("id") Integer id){
         Dept dept =deptService.findById(id);
         log.info("查询部门id为{}",id);
         return Result.success(dept);

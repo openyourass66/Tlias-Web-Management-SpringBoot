@@ -19,6 +19,13 @@ public class ClazzController {
         PageResult<Clazz> pageResult = clazzService.page(param);
         return Result.success(pageResult);
     }
+    //根据id查询班级
+    @GetMapping("/{id}")
+    public Result get(@PathVariable("id") Integer id){
+        log.info("根据id查询班级,id:{}", id);
+        Clazz clazz = clazzService.findById(id);
+        return Result.success(clazz);
+    }
     //添加班级
     @PostMapping
     public Result add(@RequestBody Clazz clazz){

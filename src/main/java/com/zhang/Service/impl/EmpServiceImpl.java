@@ -27,7 +27,7 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public PageResult<Emp> page(EmpQueryParam  param){
         PageHelper.startPage(param.getPage(),param.getPageSize());
-        List<Emp> empList=empMapper.list(param);
+        List<Emp> empList=empMapper.page(param);
         Page<Emp> p =(Page<Emp>) empList;
         return new PageResult<Emp>(p.getTotal(),p.getResult());
 

@@ -21,9 +21,14 @@ public class ClazzServiceImpl implements ClazzService {
     @Override
     public PageResult<Clazz> page(ClazzQueryParam param){
         PageHelper.startPage(param.getPage(),param.getPageSize());
-        List<Clazz> list = clazzMapper.list(param);
+        List<Clazz> list = clazzMapper.page(param);
         Page<Clazz> p =(Page<Clazz>) list;
         return new PageResult<Clazz>(p.getTotal(),p.getResult());
+    }
+    //根据id查询班级
+    @Override
+    public Clazz findById(Integer id){
+        return clazzMapper.findById(id);
     }
     //添加班级
     @Override
