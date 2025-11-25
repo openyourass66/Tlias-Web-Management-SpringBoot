@@ -53,5 +53,7 @@ public class ClazzServiceImpl implements ClazzService {
     public void deleteById(Integer id){
         clazzMapper.deleteById(id);
     }
+    //统计班级人数
+
 
 }

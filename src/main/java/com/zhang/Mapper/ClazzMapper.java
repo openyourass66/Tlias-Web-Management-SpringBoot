@@ -5,6 +5,7 @@ import com.zhang.pojo.ClazzQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface ClazzMapper {
@@ -20,5 +21,6 @@ public interface ClazzMapper {
     void update(Clazz clazz);
     //删除班级
     void deleteById(Integer id);
-
+    //统计班级人数
+    List<Map<String,Object>> getStudentCountData();
 }

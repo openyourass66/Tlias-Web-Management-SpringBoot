@@ -58,4 +58,9 @@
     <delete id="deleteById">
         delete from clazz where id=#{id}
     </delete>
+<!--    统计班级人数-->
+    <select id="getStudentCountData" resultType="java.util.Map">
+        select c.name clazzName,count(*) num from student s left join clazz c on s.clazzId=c.id
+        group by s.clazzId;
+    </select>
 </mapper>
