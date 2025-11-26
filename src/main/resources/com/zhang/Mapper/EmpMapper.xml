@@ -131,4 +131,9 @@
         from emp
         group by gender
      </select>
+<!--    登陆查询-->
+    <select id="selectByUsernameAndPassword" resultType="com.zhang.pojo.Emp">
+        select id,username,name from emp
+        where username=#{username} and password=#{password}
+    </select>
 </mapper>

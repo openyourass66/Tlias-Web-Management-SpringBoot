@@ -5,18 +5,20 @@ import com.github.pagehelper.PageHelper;
 import com.zhang.Mapper.EmpExprMapper;
 import com.zhang.Mapper.EmpMapper;
 import com.zhang.Service.EmpService;
-import com.zhang.pojo.Emp;
-import com.zhang.pojo.EmpExpr;
-import com.zhang.pojo.EmpQueryParam;
-import com.zhang.pojo.PageResult;
+import com.zhang.Utils.JwtUtils;
+import com.zhang.pojo.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+@Slf4j
 @Service
 public class EmpServiceImpl implements EmpService {
     @Autowired
@@ -82,6 +84,22 @@ public class EmpServiceImpl implements EmpService {
     public void deleteByIds(List<Integer> ids){
         empMapper.deleteByIds(ids);
         empExprMapper.deleteByEmpIds(ids);
+    }
+    //登录
+    @Override
+    public LoginInfo login(Emp emp){
+        Emp e= empMapper.selectByUsernameAndPassword(emp);
+        if (e != null){
+            log.info("登录成功,用户:{}",e);
+            //生成jwt令牌
+            Map<String,Object> claims=new HashMap<>();
+            claims.put("id",e.getId());
+            claims.put("username",e.getUsername());
+            claims.put("name",e.getName());
+            String jwt = JwtUtils.generateJwt(claims);
+            return new LoginInfo(e.getId(),e.getUsername(),e.getName(),jwt);
+        }
+        return null;
     }
 
 }

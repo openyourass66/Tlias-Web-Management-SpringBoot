@@ -2,6 +2,7 @@ package com.zhang.Mapper;
 
 import com.zhang.pojo.Emp;
 import com.zhang.pojo.EmpQueryParam;
+import com.zhang.pojo.LoginInfo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -27,5 +28,6 @@ public interface EmpMapper {
     List<Map<String,Object>> getEmpJobData();
     //统计性别数据
     List<Map<String,Object>> getEmpGenderData();
-
+    //登录查询
+    Emp selectByUsernameAndPassword(Emp emp);
 }

@@ -2,6 +2,7 @@ package com.zhang.Service;
 
 import com.zhang.pojo.Emp;
 import com.zhang.pojo.EmpQueryParam;
+import com.zhang.pojo.LoginInfo;
 import com.zhang.pojo.PageResult;
 
 import java.util.List;
@@ -19,5 +20,6 @@ public interface EmpService {
     void deleteByIds(List<Integer> ids);
     //修改员工
     void update(Emp emp);
-
+    //登录
+    LoginInfo login(Emp emp);
 }
