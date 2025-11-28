@@ -1,5 +1,6 @@
 package com.zhang.Controller;
 
+import com.zhang.Anno.Log;
 import com.zhang.Service.ClazzService;
 import com.zhang.pojo.*;
 import lombok.extern.slf4j.Slf4j;
@@ -36,6 +37,7 @@ public class ClazzController {
         return Result.success(clazz);
     }
     //添加班级
+    @Log
     @PostMapping
     public Result add(@RequestBody Clazz clazz){
         log.info("添加班级,参数:{}", clazz);
@@ -43,6 +45,7 @@ public class ClazzController {
         return Result.success();
     }
     //修改班级
+    @Log
     @PutMapping
     public Result update(@RequestBody Clazz clazz){
         log.info("修改班级,参数:{}", clazz);
@@ -50,6 +53,7 @@ public class ClazzController {
         return Result.success();
     }
     //删除班级
+    @Log
     @DeleteMapping(("{id}"))
     public Result delete(@PathVariable("id") Integer id){
         log.info("删除部门id为{}",id);

@@ -1,6 +1,8 @@
 //package com.zhang.Filter;
 //
+//import com.zhang.Utils.CurrentHolder;
 //import com.zhang.Utils.JwtUtils;
+//import io.jsonwebtoken.Claims;
 //import jakarta.servlet.*;
 //import jakarta.servlet.annotation.WebFilter;
 //import jakarta.servlet.http.HttpServletRequest;
@@ -35,7 +37,10 @@
 //        }
 //        //验证令牌，如果验证失败则返回错误信息
 //        try{
-//            JwtUtils.parseJWT(token);
+//            Claims claims = JwtUtils.parseJWT(token);
+//            Integer empId = Integer.valueOf(claims.get("empId").toString());
+//            CurrentHolder.setCurrentId(empId);
+//            log.info("当前用户id为：{}",empId);
 //        } catch (Exception e) {
 //            log.info("令牌非法，响应401");
 //            response.setStatus(401);
@@ -44,5 +49,6 @@
 //        //放行
 //        log.info("令牌合法，放行");
 //        filterChain.doFilter(request, response);
+//        CurrentHolder.remove();
 //    }
 //}

@@ -1,5 +1,6 @@
 package com.zhang.Controller;
 
+import com.zhang.Anno.Log;
 import com.zhang.Service.EmpService;
 import com.zhang.pojo.Emp;
 import com.zhang.pojo.EmpQueryParam;
@@ -41,6 +42,7 @@ public class EmpController {
         return Result.success(emp);
     }
     //添加员工
+    @Log
     @PostMapping
     public Result add(@RequestBody Emp emp){
         log.info("添加员工,参数:{}", emp);
@@ -49,6 +51,7 @@ public class EmpController {
     }
 
     //修改员工
+    @Log
     @PutMapping
     public Result update(@RequestBody Emp emp){
         log.info("修改员工,参数:{}", emp);
@@ -56,6 +59,7 @@ public class EmpController {
         return Result.success();
     }
     //删除员工
+    @Log
     @DeleteMapping()
     public Result delete(@RequestParam("ids") List<Integer> ids){
         log.info("删除员工,参数:{}", ids);

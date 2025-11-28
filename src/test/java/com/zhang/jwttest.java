@@ -1,23 +1,15 @@
 package com.zhang;
 
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+
+import com.zhang.Utils.JwtUtils;
+import io.jsonwebtoken.Claims;
 import org.junit.jupiter.api.Test;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 public class jwttest {
     @Test
     public void testGenetateJwt(){
-        Map<String, Object> dataMap = new HashMap<>();
-        dataMap.put("id",1);
-        dataMap.put("username","zhang");
-        String jwt=Jwts.builder().signWith(SignatureAlgorithm.HS512,"emhhbmd4aQ==")//指定加密算法和密钥
-                .addClaims(dataMap)//添加自定义信息
-                .setExpiration(new Date(System.currentTimeMillis()+3600*1000))//设置有效期
-                .compact();//生成jwt
-        System.out.println(jwt);
+        Claims claims = JwtUtils.parseJWT("eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5a6L5rGfIiwiaWQiOjIsInVzZXJuYW1lIjoic29uZ2ppYW5nIiwiZXhwIjoxNzY0Mzc3MTkxfQ.G8Uz_i-hiMf2N5-fMpuJhV89RWMvar2rrrK-rUyX7g0");
+        System.out.println(claims);
     }
 }

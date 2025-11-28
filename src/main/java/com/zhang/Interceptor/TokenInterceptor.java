@@ -1,12 +1,13 @@
 package com.zhang.Interceptor;
 
 import com.zhang.Utils.JwtUtils;
+import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-
+import com.zhang.Utils.CurrentHolder;
 @Slf4j
 @Component
 public class TokenInterceptor implements HandlerInterceptor {
@@ -25,13 +26,22 @@ public class TokenInterceptor implements HandlerInterceptor {
         }
         //验证令牌，如果验证失败则返回错误信息
         try{
-            JwtUtils.parseJWT(token);
+            Claims claims = JwtUtils.parseJWT(token);
+            Integer empId = Integer.valueOf(claims.get("empId").toString());
+            CurrentHolder.setCurrentId(empId);
+            log.info("当前用户id为：{}",empId);
         } catch (Exception e) {
-            log.info("令牌非法，响应401");
+            log.info("令牌非法，响应401{}",e);
             response.setStatus(401);
             return false;
         }
         //放行
         log.info("令牌合法，放行");
         return true;
-    }}
+    }
+    //请求处理之后执行
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        CurrentHolder.remove();
+    }
+}

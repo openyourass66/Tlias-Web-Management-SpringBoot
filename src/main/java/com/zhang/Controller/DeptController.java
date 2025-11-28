@@ -1,5 +1,6 @@
 package com.zhang.Controller;
 
+import com.zhang.Anno.Log;
 import com.zhang.Service.DeptService;
 import com.zhang.pojo.Dept;
 import com.zhang.pojo.Result;
@@ -29,6 +30,7 @@ public class DeptController {
         return Result.success(dept);
     }
     //修改部门
+    @Log
     @PutMapping()
      public Result update(@RequestBody Dept dept){
         deptService.update(dept);
@@ -36,6 +38,7 @@ public class DeptController {
         return Result.success();
     }
     //添加部门
+    @Log
     @PostMapping()
     public Result add(@RequestBody Dept dept){
         deptService.add(dept);
@@ -43,6 +46,7 @@ public class DeptController {
         return Result.success();
     }
     //删除部门
+    @Log
     @DeleteMapping()
     public Result delete(@RequestParam("id") Integer id){
         deptService.deleteById(id);

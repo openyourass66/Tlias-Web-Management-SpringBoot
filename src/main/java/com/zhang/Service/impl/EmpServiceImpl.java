@@ -93,7 +93,7 @@ public class EmpServiceImpl implements EmpService {
             log.info("登录成功,用户:{}",e);
             //生成jwt令牌
             Map<String,Object> claims=new HashMap<>();
-            claims.put("id",e.getId());
+            claims.put("empId",e.getId());
             claims.put("username",e.getUsername());
             claims.put("name",e.getName());
             String jwt = JwtUtils.generateJwt(claims);

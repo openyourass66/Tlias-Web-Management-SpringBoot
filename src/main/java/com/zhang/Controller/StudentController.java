@@ -1,12 +1,12 @@
 package com.zhang.Controller;
 
+import com.zhang.Anno.Log;
 import com.zhang.Service.StudentService;
 import com.zhang.pojo.PageResult;
 import com.zhang.pojo.Result;
 import com.zhang.pojo.Student;
 import com.zhang.pojo.StudentQueryParam;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +33,7 @@ public class StudentController {
         return Result.success(student);
     }
     //添加学生
+    @Log
     @PostMapping
     public Result add(@RequestBody Student student){
         log.info("添加学生,参数:{}", student);
@@ -40,6 +41,7 @@ public class StudentController {
         return Result.success();
     }
     //修改学生
+    @Log
     @PutMapping
     public Result update(@RequestBody Student student){
         log.info("修改学生,参数:{}", student);
@@ -47,6 +49,7 @@ public class StudentController {
         return Result.success();
     }
     //删除学生
+    @Log
     @DeleteMapping("/{ids}")
     public Result delete(@PathVariable("ids") List<Integer> ids){
         log.info("删除学生,参数:{}", ids);
@@ -54,6 +57,7 @@ public class StudentController {
         return Result.success();
     }
     //违纪处理
+    @Log
     @PutMapping("violation/{id}/{score}")
     public Result violation(@PathVariable("id") Integer id,@PathVariable("score") Integer score){
         log.info("违纪处理,参数:{}", id);

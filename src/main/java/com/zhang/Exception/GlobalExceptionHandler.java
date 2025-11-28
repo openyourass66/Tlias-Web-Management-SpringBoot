@@ -15,13 +15,4 @@ public class GlobalExceptionHandler {
         log.error("程序出错啦~:{}",e.getMessage());
         return Result.error("服务器异常,请联系管理员");
     }
-//    @ExceptionHandler
-//    public Result handleDuplicateKeyException(DuplicateKeyException e){
-//        log.error("程序出错啦~:{}",e);
-//        String msg = e.getMessage();
-//        int index = msg.indexOf("Duplicate entry");
-//        String errMsg=msg.substring(index);
-//        String[] split = errMsg.split(" ");
-//        return Result.error(split[2] + "已存在");
-//    }
 }
