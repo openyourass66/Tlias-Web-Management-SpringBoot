@@ -14,7 +14,7 @@ public interface DeptMapper {
     @Select("select * from dept where id=#{id}")
     Dept findById(Integer id);
     //添加部门
-    @Insert("insert into dept(name,createTime,updateTime) vazlues(#{name},#{createTime},#{updateTime})")
+    @Insert("insert into dept(name,createTime,updateTime) values(#{name},#{createTime},#{updateTime})")
     void add(Dept dept);
     //修改部门
     @Update("update dept set name=#{name},updateTime=#{updateTime} where id=#{id}")
