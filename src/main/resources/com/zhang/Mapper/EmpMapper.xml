@@ -39,12 +39,12 @@
         <result property="updateTime" column="updateTime"/>
         <result property="deptName" column="deptName"/>
         <collection property="exprList" ofType="com.zhang.pojo.EmpExpr">
-            <id property="id" column="id"/>
+            <id property="id" column="exprId"/>
             <result property="empId" column="empId"/>
             <result property="begin" column="begin"/>
             <result property="end" column="end"/>
             <result property="company" column="company"/>
-            <result property="job" column="job"/>
+            <result property="job" column="exprJob"/>
         </collection>
 
 
@@ -52,15 +52,16 @@
 <!--    根据id查询员工-->
     <select id="findById" resultMap="empResultMap">
         select
-            e.*,
-            ee.begin,ee.end,ee.company,ee.job
+        e.*,
+        ee.id as exprId,
+        ee.begin,ee.end,ee.company,ee.job as exprJob
         from emp e left join empExpr ee
-            on e.id=ee.empId
+        on e.id=ee.empId
         where e.id=#{id}
     </select>
 <!--    添加员工-->
     <insert id="add" useGeneratedKeys="true" keyProperty="id">
-        insert into emp(username,name,gender,phone,job,salary,ima ge,entryDate,deptId,createTime,updateTime)
+        insert into emp(username,name,gender,phone,job,salary,image,entryDate,deptId,createTime,updateTime)
         values(#{username},#{name},#{gender},#{phone},#{job},#{salary},#{image},#{entryDate},#{deptId},#{createTime},#{updateTime})
     </insert>
 <!--    修改员工-->

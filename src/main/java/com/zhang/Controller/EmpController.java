@@ -16,6 +16,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/emps")
+@CrossOrigin
 public class EmpController {
     @Autowired
     private EmpService empService;

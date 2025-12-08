@@ -6,7 +6,19 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
+  servlet:
+    multipart:
+      # 单个文件最大大小
+      max-file-size: 10MB
+      # 单次请求所有文件总大小
+      max-request-size: 100MB
 
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com 
+    bucketName: emp-images
+    region: cn-beijing
+  

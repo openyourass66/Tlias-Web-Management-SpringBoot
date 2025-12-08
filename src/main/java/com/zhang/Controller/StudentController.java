@@ -15,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("students")
 @Slf4j
+@CrossOrigin
 public class StudentController {
     @Autowired
     private StudentService studentService;

@@ -12,6 +12,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("clazzs")
+@CrossOrigin
 public class ClazzController {
     @Autowired
     private ClazzService clazzService;
