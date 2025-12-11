@@ -55,7 +55,7 @@
         e.*,
         ee.id as exprId,
         ee.begin,ee.end,ee.company,ee.job as exprJob
-        from emp e left join empExpr ee
+        from emp e left join empexpr ee
         on e.id=ee.empId
         where e.id=#{id}
     </select>

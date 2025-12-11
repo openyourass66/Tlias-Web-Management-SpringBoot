@@ -1,8 +1,8 @@
 package com.zhang.Aop;
 
-import com.zhang.Mapper.OperateLogMapper;
+import com.zhang.Mapper.LogMapper;
 import com.zhang.Utils.CurrentHolder;
-import com.zhang.pojo.OperateLog;
+import com.zhang.pojo.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -17,7 +17,7 @@ import java.util.Arrays;
 @Slf4j
 public class RecordTimeAspect {
     @Autowired
-    private OperateLogMapper operateLogMapper;
+    private LogMapper logMapper;
     @Around("@annotation(com.zhang.Anno.Log)")
     public Object recordTime(ProceedingJoinPoint pjp) throws Throwable {
         //记录开始时间
@@ -30,7 +30,7 @@ public class RecordTimeAspect {
         long costTime = end-begin;
         //
         //构建日志实体
-        OperateLog operateLog = new OperateLog();
+        Log operateLog = new Log();
         operateLog.setOperateEmpId(getCurrentId());
         operateLog.setOperateTime(LocalDateTime.now());
         operateLog.setClassName(pjp.getTarget().getClass().getSimpleName());
@@ -40,7 +40,7 @@ public class RecordTimeAspect {
         operateLog.setCostTime(costTime);
         //保存日记
         log.info("记录操作日志:{}",operateLog);
-        operateLogMapper.insert(operateLog);
+        logMapper.insert(operateLog);
         return result;
     }
     //获取当前用户id

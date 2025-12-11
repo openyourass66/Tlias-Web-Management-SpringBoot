@@ -5,7 +5,7 @@
 <mapper namespace="com.zhang.Mapper.ClazzMapper">
 <!--    分页条件查询-->
     <select id="page" resultType="com.zhang.pojo.Clazz">
-        select c.*,e.name masterName from Clazz c left join emp e on c.masterId=e.id
+        select c.*,e.name masterName from clazz c left join emp e on c.masterId=e.id
         <where>
             <if test="name!=null and name!=''">
                 c.name like concat('%',#{name},'%')

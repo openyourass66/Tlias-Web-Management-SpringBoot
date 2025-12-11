@@ -2,7 +2,7 @@ package com.zhang.Controller;
 
 import com.zhang.Service.LogService;
 import com.zhang.pojo.LogQueryParam;
-import com.zhang.pojo.OperateLog;
+import com.zhang.pojo.Log;
 import com.zhang.pojo.PageResult;
 import com.zhang.pojo.Result;
 import lombok.extern.slf4j.Slf4j;
@@ -18,11 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/log")
 public class LogController {
     @Autowired
-    LogService logService;
+   LogService logService;
     @GetMapping("/page")
     public Result  page(LogQueryParam param){
         log.info("日志查询,参数:{}");
-        PageResult<OperateLog> pageResult = logService.page(param);
+        PageResult<Log> pageResult = logService.page(param);
         return Result.success(pageResult);
     }
 

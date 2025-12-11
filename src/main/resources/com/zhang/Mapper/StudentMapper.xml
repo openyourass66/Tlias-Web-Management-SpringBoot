@@ -20,7 +20,7 @@
         order by s.updateTime desc
     </select>
 <!--    根据id查询-->
-    <select id="findById">
+    <select id="findById" resultType="com.zhang.pojo.Student">
         select * from student where id=#{id}
     </select>
 <!--   添加学生-->

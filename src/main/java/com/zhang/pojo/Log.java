@@ -1,10 +1,15 @@
 package com.zhang.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
 @Data
-public class OperateLog {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Log {
     private Integer id; //ID
     private Integer operateEmpId; //操作人ID
     private LocalDateTime operateTime; //操作时间
@@ -15,4 +20,5 @@ public class OperateLog {
     private Long costTime; //操作耗时
 
     String empName;
+
 }
